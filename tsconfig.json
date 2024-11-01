@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "declarationDir": "./types",
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "declaration": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "dist",
+    "types",
+    "node_modules",
+    "scripts"
+  ]
+}

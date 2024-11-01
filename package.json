@@ -1,0 +1,48 @@
+{
+  "name": "tailwind-color-list",
+  "version": "0.0.1-beta-0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "execute": "ts-node src/index",
+    "watch": "nodemon",
+    "format": "prettier --config \"./.prettierrc\" --write \"**/*.{js,ts,json}\"",
+    "lint:staged": "lint-staged",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,json}": "npm run format"
+  },
+  "nodemonConfig": {
+    "exec": "npm run execute",
+    "watch": "./src",
+    "ext": "ts"
+  },
+  "author": {
+    "name": "Nirvik Purkait"
+  },
+  "homepage": "https://github.com/nirvikpurkait/tailwind-color-list#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirvikpurkait/tailwind-color-list.git"
+  },
+  "license": "MIT",
+  "files": [
+    "types",
+    "dist"
+  ],
+  "keywords": [],
+  "devDependencies": {
+    "@types/node": "^22.8.6",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "nodemon": "^3.1.7",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
