@@ -3,6 +3,10 @@
 # dependencies
 /node_modules
 
+# production
+dist
+types
+
 # testing
 /coverage
 

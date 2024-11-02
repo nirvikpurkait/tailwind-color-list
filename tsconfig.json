@@ -11,15 +11,9 @@
     "declarationDir": "./types",
     "noImplicitAny": true,
     "alwaysStrict": true,
+    "resolveJsonModule": true,
     "declaration": true
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "dist",
-    "types",
-    "node_modules",
-    "scripts"
-  ]
+  "include": ["src"],
+  "exclude": ["types", "dist"]
 }
