@@ -38,7 +38,13 @@
     "types",
     "dist"
   ],
-  "keywords": [],
+  "keywords": [
+    "tailwind-color-list",
+    "color-list",
+    "tailwind",
+    "color",
+    "list"
+  ],
   "devDependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.0.1",

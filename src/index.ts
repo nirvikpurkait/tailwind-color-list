@@ -16,6 +16,14 @@ const colorDetails: Color = colors;
  * the complexity
  */
 export function findColorName(hexColor: string): string | null {
+  if (hexColor === "#000000") {
+    return "black";
+  }
+
+  if (hexColor === "#ffffff") {
+    return "white";
+  }
+
   const colorNames = Object.keys(colorDetails);
   for (let colorName of colorNames) {
     const shades = Object.keys(colorDetails[colorName]);

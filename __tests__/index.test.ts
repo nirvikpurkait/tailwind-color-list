@@ -577,6 +577,15 @@ const colorList = [
     "#4c0519",
   ],
 ];
+describe("test non-shading color", () => {
+  test("return black for #000000", () => {
+    expect(findColorName("#000000")).toBe("black");
+  });
+
+  test("return white for #ffffff", () => {
+    expect(findColorName("#ffffff")).toBe("white");
+  });
+});
 
 describe("return null if no matching color", () => {
   test("for #94a3b9 returns null", () => {
@@ -592,15 +601,11 @@ describe("return color name for valid color", () => {
       // as two color has same color code, the code may throw some error.
       const shouldSkipTest: boolean = colorIdx === 3 && shadeIdx === 0;
 
-      test(
-        `for ${shade} color is ${hexColor}`,
-        { skip: shouldSkipTest },
-        () => {
-          expect(findColorName(hexColor)).toBe(
-            colorAndShadeCombo[colorIdx][shadeIdx]
-          );
-        }
-      );
+      test(`return ${shade} for ${hexColor}`, { skip: shouldSkipTest }, () => {
+        expect(findColorName(hexColor)).toBe(
+          colorAndShadeCombo[colorIdx][shadeIdx]
+        );
+      });
     });
   });
 });
