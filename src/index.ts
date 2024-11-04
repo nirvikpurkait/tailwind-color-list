@@ -16,6 +16,8 @@ const colorDetails: Color = colors;
  * the complexity
  */
 export function findColorName(hexColor: string): string | null {
+  hexColor = hexColor.toLowerCase();
+
   if (hexColor === "#000000") {
     return "black";
   }

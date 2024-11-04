@@ -577,6 +577,21 @@ const colorList = [
     "#4c0519",
   ],
 ];
+
+describe("test for uppercase/lowercase/and mixed color type", () => {
+  test("return white for uppercase color hex: #FFFFFF", () => {
+    expect(findColorName("#FFFFFF")).toBe("white");
+  });
+
+  test("return white for lowercase color hex: #ffffff", () => {
+    expect(findColorName("#ffffff")).toBe("white");
+  });
+
+  test("return white for mixed color hex: #fFfFff", () => {
+    expect(findColorName("#fFfFff")).toBe("white");
+  });
+});
+
 describe("test non-shading color", () => {
   test("return black for #000000", () => {
     expect(findColorName("#000000")).toBe("black");

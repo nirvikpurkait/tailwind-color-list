@@ -6,7 +6,7 @@
   "types": "types/index.d.ts",
   "scripts": {
     "execute": "ts-node src/index",
-    "watch": "nodemon",
+    "dev": "nodemon",
     "test": "vitest",
     "test:changed": "npm test -- --changed",
     "test:run": "npm test -- --run",
