@@ -1,6 +1,6 @@
 {
   "name": "tailwind-color-list",
-  "version": "0.0.1-beta-2",
+  "version": "0.0.1-beta-3",
   "description": "This package gives all tailwind color name and shade",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
