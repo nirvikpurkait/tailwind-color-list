@@ -15,7 +15,7 @@ findColorName("#f0abfc"); // fuchsia-300
 // invalid predifined tailwind-color
 findColorName("#94a3b9"); // null
 
-// "#fafafa" will only return "zinc-50" even though,
-// "neutral-50" is also "#fafafa"
-findColorName("#fafafa"); // zinc-50
+// "#fafafa" will only return "neutral-50" even though,
+// "zinc-50" is also "#fafafa"
+findColorName("#fafafa"); // neutral-50
 ```
